@@ -18,28 +18,40 @@
     <link rel="stylesheet" type="text/css" href="css/escollir.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
 </head>
 <body>
-
-	<div class="limiter">
-        	
+	<div class="limiter">	
         <div class="container-login100" style="background-image: url('images/login-bg.jpg');" >
-            
-            <div class="wrap-login100" style="margin-top: 100px;padding:0; height: 650px">
-                <div class="w3-bar w3-xlarge w3-padding-24" style="background-color: rgba(1,1,1,0); ">
+            <div class="wrap-login100" style="padding:0; height: 650px">
+                <div class="w3-bar w3-xlarge w3-padding-24" style="background-color: rgba(1,1,1,0); margin-bottom:0">
                     <div class="w3-bar-item w3-wide w3-text-white" style="font-family: 'Pacifico', cursive;">
                         <img width="35" class="w3-margin-right" src="images/logo_heart.png">Sensoric Health 
                     </div>
                     <i class="fa fa-bars w3-right w3-margin-right w3-text-white" style="margin-top:12px"></i>
                 </div>
-                <div class="w3-container">
+                <div class="w3-container" style="padding-top:0">
                     <div class="w3-center">
-                        <img src="images/logo_heart.png" width="100" alt="">
+                        <img src="images/graphics/NivellGlucemiaCorrecte.png" width="200" alt="">
                     </div>
                     <div class="w3-card-4 w3-round-large w3-margin-top" style="height: 150px; background-color: rgb(250,250,250)">
                         <header class="w3-container">
-                            <h3 class="w3-small w3-text-gray"><i class="fa fa-medkit w3-margin-right"></i>Això es el header</h3>
+                            <h3 class="w3-small w3-text-gray"><i class="fa fa-medkit w3-margin-right"></i>Presa de glucèmia</h3>
                         </header>
+                        <div class=" w3-container">
+                            <p class="w3-margin">Es registrarà la glucèmia a les 14:00.</p>
+                            <a id="datetimepicker" data-target="datetimepicker3" data-toggle="datetimepicker" class="w3-button w3-right w3-paddi w3-small w3-margin-right w3-light-gray w3-hover-blue square">Canviar hora</a>
+                        </div>
+                    </div>
+
+                    <div class="w3-card-4 w3-round-large w3-margin-top" style="background-color: rgb(250,250,250)">
+                        <header class="w3-container">
+                            <h3 class="w3-small w3-text-gray"><i class="fa fa-medkit w3-margin-right"></i>Administració insulina ràpida</h3>
+                        </header>
+                        <div class="w3-container w3-row">
+                            <p class="w3-col l10 s10 w3-padding">Administrar 2 UI.</p>
+                            <a class="w3-col l2 s2 w3-button w3-right w3-paddi w3-small w3-light-gray w3-hover-blue w3-margin-bottom">Fet</a>
+                        </div>
                     </div>
                 </div>
 			</div>
@@ -56,6 +68,15 @@
 	<script src="vendor/daterangepicker/moment.min.js"></script>
 	<script src="vendor/daterangepicker/daterangepicker.js"></script>
 	<script src="vendor/countdowntime/countdowntime.js"></script>
-	<script src="js/login.js"></script>
+    <script src="js/login.js"></script>
+    <script type="text/javascript" src="js/moment.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker').datetimepicker({
+                format: 'LT'
+            });
+        });
+    </script>
 </body>
 </html>
