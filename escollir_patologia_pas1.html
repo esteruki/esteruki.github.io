@@ -32,7 +32,7 @@
                     </div>
                 
                 </div>
-                <form class="login100-form validate-form" style="padding:30px;">
+                <form class="login100-form validate-form" style="padding:30px;" id="pas1">
                     <h3 class="w3-xlarge w3-text-white" style="margin-bottom: 60px">Per quina de les següents situacions utilitzaràs l'app:</h3>
                     <div class="contact100-form-checkbox">
                         <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
@@ -57,7 +57,7 @@
                     
                     <div class="container-login100-form-btn" style="margin-top: 50px">
                         <i class="fa fa-circle w3-margin-bottom w3-margin-right w3-text-indigo"></i><i class="fa fa-circle w3-margin-bottom w3-text-white"></i>
-                        <div style="width: 100%" class="login100-form-btn" onclick="window.location.href='escollir_patologia_pas2_diabetis.html'">
+                        <div style="width: 100%" class="login100-form-btn" onclick="submitForm()">
                             Següent
                         </div>
                     </div>
@@ -78,6 +78,16 @@
 	<script src="vendor/daterangepicker/moment.min.js"></script>
 	<script src="vendor/daterangepicker/daterangepicker.js"></script>
 	<script src="vendor/countdowntime/countdowntime.js"></script>
-	<script src="js/login.js"></script>
+    <script src="js/login.js"></script>
+    <script>
+        function submitForm() {
+            var form = $("#pas1")
+            if($("#ckb1").is(":checked")){
+                window.location.href='escollir_patologia_pas2_diabetis.html'
+            } else {
+                window.location.href='escollir_patologia_pas2_hipertensio.html'
+            }
+        }
+        </script>
 </body>
 </html>
