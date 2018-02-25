@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Registre Sensoric Health</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">	
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/escollir.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+	<div class="limiter">
+        	
+        <div class="container-login100" style="background-image: url('images/login-bg.jpg');" >
+            
+            <div class="wrap-login100" style="margin-top: 100px;padding:0; height: 700px">
+                <div class="w3-bar w3-xlarge" style="background-color: rgba(1,1,1,0); padding-left: 8%;">
+                    <div class="w3-bar-item w3-padding-24 w3-wide w3-text-white" style="font-family: 'Pacifico', cursive;">
+                        <img width="35" class="w3-margin-right" src="images/logo_heart.png">Sensoric Health
+                    </div>
+                
+                </div>
+                <form class="login100-form validate-form" style="padding:30px; padding-top: 20px">
+                    <h3 class="w3-xlarge w3-text-white" style="margin-bottom: 60px"><i class="fa fa-cogs"></i> INFORMACIÓ ADDICIONAL</h3>
+                    
+                    <div class="w3-dropdown-hover" style="width:80%; margin-left: 30px;">
+                        <button class="w3-button w3-white">Tipus de diabetis <i class="fa fa-angle-down"></i></button>
+                        <div class="w3-dropdown-content w3-bar-block w3-border" style="width:100%">
+                            <a href="#" class="w3-bar-item w3-button">Tipus 1</a>
+                            <a href="#" class="w3-bar-item w3-button">Tipus 2</a>
+                            <a href="#" class="w3-bar-item w3-button">Diabetis gestacional</a>
+                        </div>
+                    </div>
+                    
+                    <div class="w3-dropdown-hover" style="width:80%; margin-left: 30px; margin-top: 50px; margin-bottom: 30px">
+                        <button class="w3-button w3-white">Tractament actual <i class="fa fa-angle-down"></i></button>
+                        <div class="w3-dropdown-content w3-bar-block w3-border" style="width:100%">
+                            <div class="w3-bar-item w3-button" onclick="document.getElementById('insulina-rapida').style.display='block'">Insulina ràpida</div>
+                            <div class="w3-bar-item w3-button" onclick="document.getElementById('insulina-fixa').style.display='block'">Pauta fixa d'insulina</div>
+                            <div class="w3-bar-item w3-button" onclick="document.getElementById('insulina-fixa').style.display='block'">Metformina</div>
+                            <div class="w3-bar-item w3-button" onclick="document.getElementById('insulina-fixa').style.display='block'">Sulfonilurees</div>
+                        </div>
+                    </div>
+                    
+					<div class="wrap-input100 ">
+                        <input class="input100" type="text" name="pes" placeholder="Pes en kg">
+                        <span class="focus-input100"><i class="w3-xlarge w3-text-white fa fa-balance-scale" style="padding-top:10px;"></i></span>
+                    </div>
+
+                    <h4 class="w3-large w3-left w3-text-white"><b>Hores registre glucèmia</b></h4>
+                    <div class="wrap-input100 ">
+                        <input class="input100" type="text" name="pes" placeholder="Hora">
+                        <span class="focus-input100"><i class="w3-xlarge w3-text-white fa fa-clock-o" style="padding-top:50px;"></i></span>
+                    </div>
+
+                    <p class="w3-text-white"><i class="fa fa-plus"></i> Afegir hora</p>
+                    <div class="container-login100-form-btn" style="margin-top: 50px">
+                        <i class="fa fa-circle w3-margin-bottom w3-margin-right w3-text-white"></i><i class="fa fa-circle w3-margin-bottom w3-text-indigo"></i>
+                        <button class="login100-form-btn">
+                            Finalitzar
+                        </button>
+                    </div>
+    
+                </form>
+			</div>
+		</div>
+	</div>
+    <div id="insulina-fixa" class="w3-modal">
+        <div class="w3-modal-content w3-card-4" style="width: 350px; background-color: #7d90ff; margin-top:100px;">
+            <header class="w3-container" > 
+                <span onclick="document.getElementById('insulina-fixa').style.display='none'" 
+                class="w3-button w3-large w3-display-topright">&times;</span>
+                <h2 class="w3-text-white"><i class="fa fa-medkit w3-margin-right"></i>Pauta Medicació</h2>
+            </header>
+            <form class ="w3-container w3-padding-24 w3-row" action="">
+                <h3 class="w3-large w3-text-white"><b>Insulina Lantus</b></h3>
+                <div class="wrap-input100 w3-col l4 w3-margin-right" style="width:27%">
+                    <input class="input100" type="text" name="pes" placeholder="" style="border-bottom: black">
+                    <span class="focus-input100"><i class="w3-xlarge w3-text-white fa fa-coffee" style="padding-top:10px;"></i></span>
+                </div>
+                <div class="wrap-input100 w3-col l4 w3-margin-right" style="width:27%">
+                    <input class="input100" type="text" name="pes" placeholder="">
+                    <span class="focus-input100"><i class="w3-xlarge w3-text-white fa fa-cutlery " style="padding-top:10px;"></i></span>
+                </div>
+                <div class="wrap-input100 w3-col l4" style="width:27%">
+                    <input class="input100" type="text" name="pes" placeholder="">
+                    <span class="focus-input100"><i class="w3-xlarge w3-text-white fa fa-bed" style="padding-top:10px;"></i></span>
+                </div>
+                <p class="w3-col l12 w3-text-white"><i class="fa fa-plus"></i> Afegir tractament</p>
+                <div class="w3-col l12 container-login100-form-btn w3-margin-top">
+                        <button class="login100-form-btn">
+                            Acceptar
+                        </button>
+                    </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="insulina-rapida" class="w3-modal">
+        <div class="w3-modal-content w3-card-4" style="width: 350px; background-color: #7d90ff; ">
+            <header class="w3-container" > 
+                <span onclick="document.getElementById('insulina-rapida').style.display='none'" 
+                class="w3-button w3-large w3-display-topright">&times;</span>
+                <h2 class="w3-text-white"><i class="fa fa-medkit w3-margin-right"></i>Pauta Medicació</h2>
+            </header>
+            <form class ="w3-container w3-padding-24 w3-row" action="">
+                <div class="w3-text-white w3-col l4 w3-padding-16"><i class="fa fa-angle-left"></i>150  <i class="fa fa-arrow-right"></i></div>
+                <div class="wrap-input100 w3-col l8" style="width:60%">
+                    <input class="input100" type="text" name="pes" placeholder="Unitats">
+                    <span class="focus-input100" data-placeholder=""></span>
+                </div>
+
+                <div class="w3-text-white w3-col l4 w3-padding-16">150 - 200  <i class="fa fa-arrow-right"></i></div>
+                <div class="wrap-input100 w3-col l8" style="width:60%">
+                    <input class="input100" type="text" name="pes" placeholder="Unitats">
+                    <span class="focus-input100" data-placeholder=""></span>
+                </div>
+
+                <div class="w3-text-white w3-col l4 w3-padding-16">200 - 250 <i class="fa fa-arrow-right"></i></div>
+                <div class="wrap-input100 w3-col l8" style="width:60%">
+                    <input class="input100" type="text" name="pes" placeholder="Unitats">
+                    <span class="focus-input100" data-placeholder=""></span>
+                </div>
+
+                <div class="w3-text-white w3-col l4 w3-padding-16">250 -300 <i class="fa fa-arrow-right"></i></div>
+                <div class="wrap-input100 w3-col l8" style="width:60%">
+                    <input class="input100" type="text" name="pes" placeholder="Unitats">
+                    <span class="focus-input100" data-placeholder=""></span>
+                </div>
+
+                <div class="w3-text-white w3-col l4 w3-padding-16">300 - 350 <i class="fa fa-arrow-right"></i></div>
+                <div class="wrap-input100 w3-col l8" style="width:60%">
+                    <input class="input100" type="text" name="pes" placeholder="Unitats">
+                    <span class="focus-input100" data-placeholder=""></span>
+                </div>
+
+                <div class="w3-text-white w3-col l4 w3-padding-16"><i class="fa fa-angle-right"></i>350  <i class="fa fa-arrow-right"></i></div>
+                <div class="wrap-input100 w3-col l8" style="width:60%">
+                    <input class="input100" type="text" name="pes" placeholder="Unitats">
+                    <span class="focus-input100" data-placeholder=""></span>
+                </div>
+                <p class="w3-col l12 w3-text-white"><i class="fa fa-plus"></i> Afegir tractament</p>
+                <div class="w3-col l12 container-login100-form-btn w3-margin-top">
+                        <button class="login100-form-btn">
+                            Acceptar
+                        </button>
+                    </div>
+            </form>
+        </div>
+    </div>
+
+	<div id="dropDownSelect1"></div>
+	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js"></script>
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+	<script src="js/login.js"></script>
+</body>
+</html>
