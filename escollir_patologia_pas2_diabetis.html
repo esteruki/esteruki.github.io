@@ -68,7 +68,7 @@
                     <p class="w3-text-white"><i class="fa fa-plus"></i> Afegir hora</p>
                     <div class="container-login100-form-btn" style="margin-top: 50px">
                         <i class="fa fa-circle w3-margin-bottom w3-margin-right w3-text-white"></i><i class="fa fa-circle w3-margin-bottom w3-text-indigo"></i>
-                        <button class="login100-form-btn">
+                        <button class="login100-form-btn" onclick="changePage()">
                             Finalitzar
                         </button>
                     </div>
@@ -155,10 +155,10 @@
                 </div>
                 <p class="w3-col l12 w3-text-white"><i class="fa fa-plus"></i> Afegir tractament</p>
                 <div class="w3-col l12 container-login100-form-btn w3-margin-top">
-                        <button class="login100-form-btn">
-                            Acceptar
-                        </button>
-                    </div>
+                    <button class="login100-form-btn">
+                        Acceptar
+                    </button>
+                </div>
             </form>
         </div>
     </div>
@@ -174,5 +174,10 @@
 	<script src="vendor/daterangepicker/daterangepicker.js"></script>
 	<script src="vendor/countdowntime/countdowntime.js"></script>
     <script src="js/login.js"></script>
+    <script>
+    function changePage() {
+        window.location.href='main.html';
+    }
+    </script>
 </body>
 </html>
