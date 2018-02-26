@@ -21,14 +21,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
 </head>
 <body>
+               
 <div class="limiter">	
     <div class="container-login100" style="background-color: white">
-        <div class="wrap-login100" style="padding:0; padding-bottom: 10px">
+        <div class="wrap-login100 w3-container" style="padding:0; padding-bottom: 10px">
+            <!-- Side bar -->
+            <div class="w3-sidebar w3-bar-block w3-animate-left" style="display:none;width:20%;z-index: 5" id="mySidebar">
+                <div>
+                    <header style="background-image: url('images/navbar-bg.jpg'); background-position:center; background-size: cover;">
+                        <img src="images/user.png" class="w3-margin" width="60">
+                        <p class="w3-small w3-margin-left w3-text-white"><b>Ester Martinez Bosch</b></p>
+                        <p class="w3-small w3-margin-left w3-text-white" style="height: 35px;">ester.martinez@hotmail.com</p>
+                    </header>
+                    <div class="w3-bar-block w3-mobile w3-border-bottom w3-margin-top" style="width:100%; padding-bottom: 16px; border-bottom: 1px #c6c6c6">
+                        <a class="w3-bar-item w3-button w3-padding" style="color:#000 !important;" href="javascript:void(0)"><i class="fa fa-home w3-margin-right w3-text-gray"></i> Pàgina inici</a> 
+                        <a class="w3-bar-item w3-button w3-padding" style="color:#000 !important;" href="javascript:void(0)"><i class="fa fa-line-chart w3-margin-right w3-text-gray"></i> Seguiment diabetis</a> 
+                        <a class="w3-bar-item w3-button w3-padding" style="color:#000 !important;" href="javascript:void(0)"><i class="fa fa-futbol-o w3-margin-right w3-text-gray"></i> Seguiment exercici físic</a> 
+                    </div>
+                    <div class="w3-bar-block w3-mobile w3-border-bottom w3-margin-top" style="width:100%; padding-bottom: 16px; border-bottom: 1px #c6c6c6">
+                        <a class="w3-bar-item w3-button w3-padding" style="color:#000 !important;" href="javascript:void(0)"><i class="fa fa-calendar w3-margin-right w3-text-gray"></i> Calendari Mèdic</a> 
+                        <a class="w3-bar-item w3-button w3-padding" style="color:#000 !important;" href="javascript:void(0)"><i class="fa fa-leanpub w3-margin-right w3-text-gray"></i> Enciclopedia</a> 
+                    </div> 
+                    <div class="w3-bar-block w3-mobile w3-border-bottom w3-margin-top" style="width:100%; padding-bottom: 16px; border-bottom: 1px #c6c6c6">
+                        <a class="w3-bar-item w3-button w3-padding" style="color:#000 !important;" href="javascript:void(0)"><i class="fa fa-cogs w3-margin-right w3-text-gray"></i> Configuració</a> 
+                    </div>
+                    <div class="w3-bar-block w3-mobile w3-margin-top" style="width:100%">
+                        <a class="w3-bar-item w3-button w3-padding" style="color:#000 !important;" href="javascript:void(0)"><i class="fa fa-gavel  w3-margin-right w3-text-gray"></i> Termes i condicions d'ús</a> 
+                        <a class="w3-bar-item w3-button w3-padding" style="color:#000 !important;" href="javascript:void(0)"><i class="fa fa-gavel  w3-margin-right w3-text-gray"></i> Política de privacitat</a> 
+                    </div>
+                </div>
+            </div>
+            <!-- Overlay -->
+            <div id="myOverlay" class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer;width:100%"></div>
+
             <div class="w3-bar w3-xlarge w3-padding-24" style="background-color: rgba(1,1,1,0); padding-bottom: 10px !important;">
                 <div class="w3-bar-item w3-wide w3-text-white" style="font-family: 'Pacifico', cursive;">
                     <img width="35" class="w3-margin-right" src="images/logo_heart.png">Sensoric Health 
                 </div>
-                <i class="fa fa-bars w3-right w3-margin-right w3-text-white" style="margin-top:12px"></i>
+                <i class="fa fa-bars w3-bar-item w3-right w3-text-white" onclick="w3_open()" style="margin-top:5px"></i>
             </div>
             <div class="w3-container" style="padding-top:0">
                 <div class="w3-center w3-margin-bottom">
@@ -98,6 +128,14 @@
             format: 'LT'
         });
     });
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
 </script>
 </body>
 </html>
