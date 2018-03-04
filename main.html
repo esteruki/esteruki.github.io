@@ -1,141 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>Registre Sensoric Health</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">	
+    <title>Registre Sensoric Health</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
     <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-	<link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/login.css">
     <link rel="stylesheet" type="text/css" href="css/escollir.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css"
+    />
 </head>
+
 <body>
-               
-<div class="limiter">	
-    <div class="container-login100" style="background-color: white">
-        <div class="wrap-login100" style="padding:0; padding-bottom: 10px">
-            <!-- Side bar -->
-            <div class="w3-sidebar w3-bar-block w3-animate-left" style="display:none; width:320px; z-index: 5" id="mySidebar">
-                <div>
-                    <header style="background-image: url('images/navbar-bg.jpg'); background-position:center; background-size: cover;">
-                        <img src="images/user.png" class="w3-margin" width="60">
-                        <p class="w3-small w3-margin-left w3-text-white"><b>Ester Martinez Bosch</b></p>
-                        <p class="w3-small w3-margin-left w3-text-white" style="height: 35px;">emb7@alumnes.udl.cat</p>
-                    </header>
-                    <div class="w3-bar-block w3-mobile w3-border-bottom w3-margin-top" style="width:100%; padding-bottom: 16px; border-bottom: 1px #c6c6c6">
-                        <a class="w3-bar-item w3-button w3-padding" style="color:#000 !important;" href="javascript:void(0)"><i class="fa fa-line-chart w3-margin-right w3-text-gray"></i> Seguiment patologia</a> 
-                        <a class="w3-bar-item w3-button w3-padding" style="color:#000 !important;" href="seguiment_sport.html"><i class="fa fa-futbol-o w3-margin-right w3-text-gray"></i> Seguiment exercici físic</a> 
-                    </div>
-                    <div class="w3-bar-block w3-mobile w3-border-bottom w3-margin-top" style="width:100%; padding-bottom: 16px; border-bottom: 1px #c6c6c6">
-                        <a class="w3-bar-item w3-button w3-padding" style="color:#000 !important;" href="javascript:void(0)"><i class="fa fa-calendar w3-margin-right w3-text-gray"></i> Calendari Mèdic</a> 
-                        <a class="w3-bar-item w3-button w3-padding" style="color:#000 !important;" href="javascript:void(0)"><i class="fa fa-leanpub w3-margin-right w3-text-gray"></i> Enciclopèdia SH</a> 
-                    </div> 
-                    <div class="w3-bar-block w3-mobile w3-border-bottom w3-margin-top" style="width:100%; padding-bottom: 16px; border-bottom: 1px #c6c6c6">
-                            <a class="w3-bar-item w3-button w3-padding" style="color:#000 !important;" href="javascript:void(0)"><i class="fa fa-edit w3-margin-right w3-text-gray"></i> Editar perfil</a> 
-                        <a class="w3-bar-item w3-button w3-padding" style="color:#000 !important;" href="javascript:void(0)"><i class="fa fa-cogs w3-margin-right w3-text-gray"></i> Configuració</a> 
-                    </div>
-                    <div class="w3-bar-block w3-mobile w3-margin-top" style="width:100%">
-                        <a class="w3-bar-item w3-button w3-padding" style="color:#000 !important;" href="javascript:void(0)"><i class="fa fa-gavel  w3-margin-right w3-text-gray"></i> Termes i condicions d'ús</a> 
-                        <a class="w3-bar-item w3-button w3-padding" style="color:#000 !important;" href="javascript:void(0)"><i class="fa fa-gavel  w3-margin-right w3-text-gray"></i> Política de privacitat</a> 
-                    </div>
-                </div>
-            </div>
-            <!-- Overlay -->
-            <div id="myOverlay" class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer;width:100%"></div>
 
-            <div class="w3-bar w3-xlarge w3-padding-24" style="background-color: rgba(1,1,1,0); padding-bottom: 10px !important;">
-                <div class="w3-bar-item w3-wide w3-text-white" style="font-family: 'Pacifico', cursive;">
-                    <img width="35" class="w3-margin-right" src="images/logo_heart.png">Sensoric Health 
-                </div>
-                <i class="fa fa-bars w3-bar-item w3-right w3-text-white" onclick="w3_open()" style="margin-top:5px"></i>
-            </div>
-            <div class="w3-container" style="padding-top:0">
-                <div class="w3-center w3-margin-bottom">
-                    <img class="w3-margin-bottom" src="images/graphics/nivellsucrecorrecte.png" width="200" alt="">
-                </div>
-                <div class="w3-card-4 w3-round-large w3-margin-top" style="height: 150px; background-color: rgb(250,250,250)">
-                    <header class="w3-container">
-                        <h3 class="w3-small w3-text-gray"><i class="fa fa-medkit w3-margin-right"></i>Presa de glucèmia</h3>
-                    </header>
-                    <div class=" w3-container " id="datetimepicker3" data-target-input="nearest">
-                        <p class="w3-margin">Es registrarà la glucèmia a les 14:00.</p>
-                        <a data-target="#datetimepicker3" data-toggle="datetimepicker" class="w3-button w3-right w3-paddi w3-small w3-margin-right w3-light-gray w3-hover-blue datetimepicker-input">Canviar hora</a>
-                    </div>
-                </div>
-                
-                <div class="w3-card-4 w3-round-large w3-margin-top" style="background-color: rgb(250,250,250)">
-                    <header class="w3-container">
-                        <h3 class="w3-small w3-text-gray"><i class="fa fa-futbol-o w3-margin-right"></i>Esport realitzat</h3>
-                    </header>
-                    <div class="w3-display-container w3-padding" style="height: 115px">
-                        <p style="height:40px; " class=" w3-display-bottomleft w3-margin-left"><i class="fa fa-fire"></i>500 Kcal</p>
-                        <img class="w3-display-topmiddle" src="images/graphics/exercici.png" width="100" alt="">
-                        <p style="height:40px; " class="w3-display-bottomright w3-margin-right"><img src="images/graphics/distancia.png" width=28></img>2 Km</p>
-                    </div>
-                </div>
+    <div class="limiter">
+        <div class="container-login100" style="background-color: white">
+            <div class="wrap-login100" style="padding:0; padding-bottom: 10px">
+                <!-- Side bar -->
+                <div class="w3-sidebar w3-bar-block w3-animate-left" style="display:none; width:320px; z-index: 5; border-radius: inherit" id="mySidebar">
+                    <div>
+                        <header style="background-image: url('images/navbar-bg.jpg'); background-position:center; background-size: cover;">
+                            <img src="images/user.png" class="w3-margin" width="60">
+                            <p class="w3-small w3-margin-left w3-text-white">
+                                <b>Ester Martinez Bosch</b>
+                            </p>
+                            <p class="w3-small w3-margin-left w3-text-white" style="height: 35px;">emb7@alumnes.udl.cat</p>
+                        </header>
+                        <div class="w3-bar-block w3-mobile w3-border-bottom w3-margin-top" style="width:100%; padding-bottom: 16px; border-bottom: 1px #c6c6c6">
+                            <a class="w3-bar-item w3-button w3-padding" style="color:#000 !important;" href="main.html">
+                                <i class="fa fa-home w3-margin-right w3-text-gray"></i> Pàgina inici</a>
 
-                <div class="w3-card-4 w3-round-large w3-margin-top" style="background-color: rgb(250,250,250)">
-                    <header class="w3-container">
-                        <h3 class="w3-small w3-text-gray"><i class="fa fa-bell w3-margin-right"></i>Administració insulina ràpida</h3>
-                    </header>
-                    <div class="w3-container w3-row">
-                        <p class="w3-col l10 s10 w3-padding">Administrar 2 UI.</p>
-                        <a class="w3-col l2 s2 w3-button w3-right w3-paddi w3-small w3-light-gray w3-hover-blue w3-margin-bottom">Fet</a>
+                            <a class="w3-bar-item w3-button w3-padding" style="color:#000 !important;" href="javascript:void(0)">
+                                <i class="fa fa-line-chart w3-margin-right w3-text-gray"></i> Seguiment patologia</a>
+                            <a class="w3-bar-item w3-button w3-padding" style="color:#000 !important;" href="seguiment_sport.html">
+                                <i class="fa fa-futbol-o w3-margin-right w3-text-gray"></i> Seguiment exercici físic</a>
+                        </div>
+                        <div class="w3-bar-block w3-mobile w3-border-bottom w3-margin-top" style="width:100%; padding-bottom: 16px; border-bottom: 1px #c6c6c6">
+                            <a class="w3-bar-item w3-button w3-padding" style="color:#000 !important;" href="javascript:void(0)">
+                                <i class="fa fa-calendar w3-margin-right w3-text-gray"></i> Calendari Mèdic</a>
+                            <a class="w3-bar-item w3-button w3-padding" style="color:#000 !important;" href="javascript:void(0)">
+                                <i class="fa fa-leanpub w3-margin-right w3-text-gray"></i> Enciclopèdia SH</a>
+                        </div>
+                        <div class="w3-bar-block w3-mobile w3-border-bottom w3-margin-top" style="width:100%; padding-bottom: 16px; border-bottom: 1px #c6c6c6">
+                            <a class="w3-bar-item w3-button w3-padding" style="color:#000 !important;" href="javascript:void(0)">
+                                <i class="fa fa-edit w3-margin-right w3-text-gray"></i> Editar perfil</a>
+                            <a class="w3-bar-item w3-button w3-padding" style="color:#000 !important;" href="javascript:void(0)">
+                                <i class="fa fa-cogs w3-margin-right w3-text-gray"></i> Configuració</a>
+                        </div>
+                        <div class="w3-bar-block w3-mobile w3-margin-top" style="width:100%">
+                            <a class="w3-bar-item w3-button w3-padding" style="color:#000 !important;" href="javascript:void(0)">
+                                <i class="fa fa-gavel  w3-margin-right w3-text-gray"></i> Termes i condicions d'ús</a>
+                            <a class="w3-bar-item w3-button w3-padding" style="color:#000 !important;" href="javascript:void(0)">
+                                <i class="fa fa-gavel  w3-margin-right w3-text-gray"></i> Política de privacitat</a>
+                        </div>
                     </div>
                 </div>
+                <!-- Overlay -->
+                <div id="myOverlay" class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer;width:100%"></div>
 
-                <div class="w3-card-4 w3-round-large w3-margin-top" style="background-color: rgb(250,250,250)">
-                    <header class="w3-container">
-                        <h3 class="w3-small w3-text-gray"><i class="fa fa-bell w3-margin-right"></i>Administració medicació</h3>
-                    </header>
-                    <div class="w3-container w3-row">
-                        <p class="w3-col l10 s10 w3-padding">Administrar metformina abans de sopar.</p>
-                        <a class="w3-col l2 s2 w3-button w3-right w3-paddi w3-small w3-light-gray w3-hover-blue w3-margin-bottom">Fet</a>
+                <div class="w3-bar w3-xlarge w3-padding-24" style="background-color: rgba(1,1,1,0); padding-bottom: 10px !important;">
+                    <div class="w3-bar-item w3-wide w3-text-white" style="font-family: 'Pacifico', cursive;">
+                        <img width="35" class="w3-margin-right" src="images/logo_heart.png">Sensoric Health
+                    </div>
+                    <i class="fa fa-bars w3-bar-item w3-right w3-text-white" onclick="w3_open()" style="margin-top:5px"></i>
+                </div>
+                <div class="w3-container" style="padding-top:0">
+                    <div class="w3-center w3-margin-bottom">
+                        <img class="w3-margin-bottom" src="images/graphics/nivellsucrecorrecte.png" width="200" alt="">
+                    </div>
+                    <div class="w3-card-4 w3-round-large w3-margin-top" style="height: 150px; background-color: rgb(250,250,250)">
+                        <header class="w3-container">
+                            <h3 class="w3-small w3-text-gray">
+                                <i class="fa fa-medkit w3-margin-right"></i>Presa de glucèmia</h3>
+                        </header>
+                        <div class=" w3-container " id="datetimepicker3" data-target-input="nearest">
+                            <p class="w3-margin">Es registrarà la glucèmia a les 14:00.</p>
+                            <a data-target="#datetimepicker3" data-toggle="datetimepicker" class="w3-button w3-right w3-paddi w3-small w3-margin-right w3-light-gray w3-hover-blue datetimepicker-input">Canviar hora</a>
+                        </div>
+                    </div>
+
+                    <div class="w3-card-4 w3-round-large w3-margin-top" style="background-color: rgb(250,250,250)">
+                        <header class="w3-container">
+                            <h3 class="w3-small w3-text-gray">
+                                <i class="fa fa-futbol-o w3-margin-right"></i>Esport realitzat</h3>
+                        </header>
+                        <div class="w3-display-container w3-padding" style="height: 115px">
+                            <p style="height:40px; " class=" w3-display-bottomleft w3-margin-left">
+                                <i class="fa fa-fire"></i>500 Kcal</p>
+                            <img class="w3-display-topmiddle" src="images/graphics/exercici.png" width="100" alt="">
+                            <p style="height:40px; " class="w3-display-bottomright w3-margin-right">
+                                <img src="images/graphics/distancia.png" width=28></img>2 Km</p>
+                        </div>
+                    </div>
+
+                    <div class="w3-card-4 w3-round-large w3-margin-top" style="background-color: rgb(250,250,250)">
+                        <header class="w3-container">
+                            <h3 class="w3-small w3-text-gray">
+                                <i class="fa fa-bell w3-margin-right"></i>Administració insulina ràpida</h3>
+                        </header>
+                        <div class="w3-container w3-row">
+                            <p class="w3-col l10 s10 w3-padding">Administrar 2 UI.</p>
+                            <a class="w3-col l2 s2 w3-button w3-right w3-paddi w3-small w3-light-gray w3-hover-blue w3-margin-bottom">Fet</a>
+                        </div>
+                    </div>
+
+                    <div class="w3-card-4 w3-round-large w3-margin-top" style="background-color: rgb(250,250,250)">
+                        <header class="w3-container">
+                            <h3 class="w3-small w3-text-gray">
+                                <i class="fa fa-bell w3-margin-right"></i>Administració medicació</h3>
+                        </header>
+                        <div class="w3-container w3-row">
+                            <p class="w3-col l10 s10 w3-padding">Administrar metformina abans de sopar.</p>
+                            <a class="w3-col l2 s2 w3-button w3-right w3-paddi w3-small w3-light-gray w3-hover-blue w3-margin-bottom">Fet</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div id="dropDownSelect1"></div>
+    <div id="dropDownSelect1"></div>
 
-<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<script src="vendor/animsition/js/animsition.min.js"></script>
-<script src="vendor/bootstrap/js/popper.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<script src="vendor/select2/select2.min.js"></script>
-<script src="vendor/daterangepicker/moment.min.js"></script>
-<script src="vendor/daterangepicker/daterangepicker.js"></script>
-<script src="vendor/countdowntime/countdowntime.js"></script>
-<script src="js/login.js"></script>
-<script type="text/javascript" src="js/moment.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
-<script type="text/javascript">
-    $(function () {
-        $('#datetimepicker3').datetimepicker({
-            format: 'LT'
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/daterangepicker/moment.min.js"></script>
+    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <script src="js/login.js"></script>
+    <script type="text/javascript" src="js/moment.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker3').datetimepicker({
+                format: 'LT'
+            });
         });
-    });
-    function w3_open() {
-        document.getElementById("mySidebar").style.display = "block";
-        document.getElementById("myOverlay").style.display = "block";
-    }
-    function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-        document.getElementById("myOverlay").style.display = "none";
-    }
-</script>
+
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
 </body>
+
 </html>
